@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <section id="library">
+        <header>
+            <h1>Your Library</h1>
+        </header>
+        <div id="btns-container"></div>
+        <div id="book-container"></div>
+    </section>
+    <dialog id="add-book">
+        <form id="form">
+            <legend>
+                Book Details
+            </legend>
+            <div id="title-div">
+                <label for="title-input">
+                    Book Title:
+                </label>
+                <input required type="text" id="title-input" name="title" placeholder="ex: Harry Potter">
+            </div>
+            <div id="author-div">
+                <label for="author-input">
+                    Author Name:
+                </label>
+                <input required type="text" id="author-input" name="author" placeholder="ex: J.K. Rowling">
+            </div>
+            <div id="pages-div">
+                <label for="pages-input">
+                    Number of Pages:
+                </label>
+                <input required type="number" id="pages-input" name="pages">
+            </div>
+            <button id="submit-btn" type="submit">
+                Add Book
+            </button>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
